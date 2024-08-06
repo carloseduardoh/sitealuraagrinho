@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Campo à Cidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Do Campo à Cidade</h1>
+        <div id="loginContainer">
+            <form id="loginForm">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </header>
+    
+    <main>
+        <section id="topicos">
+            <input type="radio" id="aba-topicos" name="abas" checked>
+            <label for="aba-topicos">Tópicos sobre o tema</label>
+
+            <div id="topicos-content" class="aba-content">
+                <ul>
+                    <li>Vida rural e suas características</li>
+                    <li>Desenvolvimento urbano e suas complexidades</li>
+                    <li>Impactos ambientais da transição campo-cidade</li>
+                    <li>Cultura e diversidade nas áreas rurais e urbanas</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="campo">
+            <h2>Do Campo</h2>
+            <p>O campo representa a vida rural, caracterizada pela tranquilidade, contato com a natureza e práticas agrícolas tradicionais.</p>
+            <img src="campo.jpg" alt="Imagem do campo">
+        </section>
+        
+        <section id="cidade">
+            <h2>À Cidade</h2>
+            <p>A cidade representa o desenvolvimento urbano, com sua diversidade cultural, oportunidades econômicas e desafios ambientais.</p>
+            <img src="cidade.jpg" alt="Imagem da cidade">
+        </section>
+
+        <section id="abas">
+            <input type="radio" id="aba-comentarios" name="abas">
+            <label for="aba-comentarios">O que você achou disso</label>
+
+            <div id="comentarios" class="aba-content">
+                <form id="commentForm">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="comment">Comentário:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <br>
+                    <button type="submit">Enviar Comentário</button>
+                </form>
+                <div id="commentList">
+                    <!-- Aqui serão exibidos os comentários -->
+                </div>
+            </div>
+
+            <!-- Outras abas podem ser adicionadas aqui -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Contato para o Agrinho: <a href="mailto:contato@agrinho.com.br">contato@agrinho.com.br</a></p>
+        <p>&copy; 2024 Concurso Agrinho - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

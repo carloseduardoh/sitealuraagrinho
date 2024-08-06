@@ -1,0 +1,103 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#loginContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#loginForm {
+    display: flex;
+    align-items: center;
+}
+
+#loginForm label {
+    margin-right: 5px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#loginForm button {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos para abas */
+section#topicos {
+    margin-bottom: 20px; /* Adiciona um espaço entre o título e a próxima seção */
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label[for="aba-topicos"],
+label[for="aba-comentarios"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #2E7D32;
+}
+
+.aba-content {
+    display: none;
+}
+
+input[type="radio"]:checked ~ .aba-content {
+    display: block;
+}
